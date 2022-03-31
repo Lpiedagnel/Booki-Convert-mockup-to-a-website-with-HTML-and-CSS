@@ -1,4 +1,4 @@
-/************** GENERAL ****************/
+/************************ GENERAL ************************/
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('normalize.css');
@@ -17,4 +17,69 @@
 
 body {
     font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 5%;
+    padding-left: 5%;
+    max-width: 1280px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/************************ DESKTOP ************************/
+
+/************** HEADER ****************/
+
+/*** LOGO ***/
+
+
+/*** NAVIGATION ***/
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin-top: 40px;
+}
+
+header nav ul li {
+    margin: auto 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+header nav ul li .active {
+    color: var(--main-blue);
+}
+
+
+/************************ TABLET ************************/
+
+    @media (max-width: 992px) { 
+
+    }
+
+
+ /************************ MOBILE ************************/
+
+    @media (max-width: 768px) { 
+        .flex {
+            flex-direction: column;
+        }
+
+        /************** HEADER MOBILE ****************/
+
+        header nav ul li {
+            margin: auto;
+        }
 }
