@@ -39,28 +39,51 @@ body {
 
 /*** LOGO ***/
 
+header img {
+    width: 20%;
+}
+
 
 /*** NAVIGATION ***/
 
-header nav ul {
+nav ul {
     display: flex;
     list-style: none;
-    margin-top: 40px;
+    margin-top: 0;
 }
 
-header nav ul li {
-    margin: auto 30px;
+nav ul li {
+    margin: 0;
+    width: 170px;
+    text-align: center;
 }
 
-header nav ul li a {
-    text-decoration: none;
+nav ul li a {
     color: black;
+    text-decoration: none;
     font-weight: bold;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
 }
 
-header nav ul li .active {
+nav ul li a .line-nav {
+    border: solid 2px ;
+    margin-bottom: 35px;
+    visibility: hidden;
+}
+
+nav ul li a:hover {
     color: var(--main-blue);
 }
+
+nav ul li a:hover > .line-nav {
+    border: solid 2px var(--main-blue);
+    visibility: visible;
+}
+
 
 
 /************************ TABLET ************************/
@@ -72,6 +95,11 @@ header nav ul li .active {
 
  /************************ MOBILE ************************/
 
+    .container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
     @media (max-width: 768px) { 
         .flex {
             flex-direction: column;
@@ -79,7 +107,8 @@ header nav ul li .active {
 
         /************** HEADER MOBILE ****************/
 
-        header nav ul li {
+        header img {
+            width: 50%;
             margin: auto;
         }
 }
