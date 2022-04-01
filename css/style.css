@@ -142,6 +142,49 @@ header form button {
 }
 
 
+/*** FILTER ***/
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+header .filter-btn {
+    display: flex;
+    background-color: white;
+    border: solid 3px var(--background-grey);
+    border-radius: 50px;
+    padding: 0%;
+    transition: 0.2s;
+    margin: auto 20px;
+}
+
+header .filter-btn div {
+    background-color: var(--lighter-blue);
+    padding: 10px;
+    border-radius: 50px;
+    border: solid 5px var(--lighter-blue);
+    overflow: visible;
+}
+
+header .filter-btn div i {
+    color: var(--main-blue);
+}
+
+header .filter-btn span {
+    text-align: center;
+    padding: 15px;
+    margin: auto;
+    font-weight: bolder;
+}
+
+header .filter-btn:hover {
+    color: white;
+    background: var(--main-blue);
+    cursor: pointer;
+}
+
 
 /************************ TABLET ************************/
 
