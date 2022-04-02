@@ -28,15 +28,15 @@ body {
     max-width: 1280px;
 }
 
-.flex {
+/************************ DESKTOP ************************/
+
+/************** HEADER ****************/
+
+.flex-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
-/************************ DESKTOP ************************/
-
-/************** HEADER ****************/
 
 /*** LOGO ***/
 
@@ -197,6 +197,42 @@ header .filters div .filter-btn:hover > div {
 
 header .filters div .filter-btn:hover > div i {
     color: white;
+}
+
+header .filter-info {
+    margin: 35px auto;
+}
+
+header .filter-info span {
+    color: var(--main-blue);
+    border: 2px solid var(--background-grey);
+    width: 10px;
+    padding: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+
+/************** MAIN ****************/
+
+.flex-container-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lodging-section {
+    background-color: var(--background-grey);
+    width: 75%;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.popular-section {
+    background-color: var(--background-grey);
+    width: 20%;
+    height: 400px;
+    border-radius: 20px;
 }
 
 
