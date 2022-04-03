@@ -223,7 +223,7 @@ header .filter-info span {
 
 .lodging-section {
     background-color: var(--background-grey);
-    width: 65%;
+    width: 60%;
     height: auto;
     border-radius: 20px;
     padding: 20px;
@@ -231,10 +231,13 @@ header .filter-info span {
 
 .popular-section {
     background-color: var(--background-grey);
-    width: 30%;
-    height: 400px;
+    width: 35%;
+    height: auto;
     border-radius: 20px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 /*** ARTICLE CARD ***/
@@ -243,6 +246,7 @@ header .filter-info span {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .lodging-section a {
@@ -270,6 +274,8 @@ header .filter-info span {
 .card a {
     margin: 0;
     padding: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-header img {
@@ -291,8 +297,44 @@ header .filter-info span {
 .card-body .stars .rating {
     color: var(--main-blue);
 }
-  
 
+/*** CARDS ON POPULAR SECTION ***/
+
+.popular-section .card {
+    width: 100%;
+    margin: 5% auto;
+    height: 180px;
+}
+
+.popular-section .card a {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0px;
+    text-decoration: none;
+    color: black;
+}
+
+.popular-section .card a div img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    height: 100%;
+}
+
+.popular-section .card a div {
+    margin-right: 5%;
+    padding-bottom: 5px;
+    height: 175px;
+}
+
+.popular-section .card a div:first-child {
+    width: 40%;
+}
+
+.popular-section .card a div:last-child {
+    width: 60%;
+}
 
 /************************ TABLET ************************/
 
@@ -308,6 +350,11 @@ header .filter-info span {
 
         .lodging-section {
             width: 100%;
+        }
+
+        .popular-section {
+            width: 100%;
+            margin: 7% auto;
         }
 
         .card {
