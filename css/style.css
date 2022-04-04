@@ -392,6 +392,15 @@ header .filter-info span {
     height: 45%;
 }
 
+/************** FOOTER ****************/
+
+footer {
+    background-color: var(--background-grey);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 
 /************************ TABLET ************************/
 
@@ -480,8 +489,6 @@ header .filter-info span {
 
         /************** MAIN ****************/
 
-
-
         /*** ARTICLE CARD ***/
 
         .cards-container {
@@ -506,5 +513,11 @@ header .filter-info span {
         .activity-container .item-6 {
             height: 200px;
             width: 100%;
+        }
+
+        /************** FOOTER ****************/
+
+        .footer {
+            flex-direction: column;
         }
 }
