@@ -380,10 +380,10 @@ header .filter-info span {
     flex-direction: column;
     width: 100%;
     background-color: white;
-    height: 100%;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     padding: 0px;
+    margin-bottom: 30px;
     transition: 0.3s;
 }
 
@@ -406,14 +406,26 @@ header .filter-info span {
 
 .card-header-activity img {
     width: 100%;
-    height: 70%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
 }
 
 .card-body-activity h3 {
-    padding-left: 15px;
+    padding: 5px;
 }
+
+.act1, .act4 { height: 600px; }
+.act1 img, .act4 img { height: 520px; }
+
+.act2 { height: 330px; }
+.act2 img { height: 250px; }
+
+.act3 { height: 240px; }
+.act3 img { height: 180px; }
+
+.act5, .act6 { height: 285px; }
+.act5 img, .act6 img { height: 210px; }
 
 
 /************** FOOTER ****************/
