@@ -360,31 +360,31 @@ header .filter-info span {
 
 .activity-container {
     display: flex;
-    flex-flow: column wrap;
-    align-content: space-between;
-    /* Your container needs a fixed height, and it 
-     * needs to be taller than your tallest column. */
-    height: 600px; 
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.activity-container .item {
-    background-color: #a1cbfa;
-    width: 32%;
+.activity-container .flex-column {
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+}
+
+.item {
+    /* Optional */
+    position: relative;
     margin-bottom: 2%;
     border-radius: 3px;
-}
-
-.item:nth-child(3n+1) { order: 1; }
-.item:nth-child(3n+2) { order: 2; }
-.item:nth-child(3n)   { order: 3; }
-
-.activity-container::before,
-.activity-container::after {
-    content: "";
-    flex-basis: 100%;
-    width: 0;
-    order: 2;
-}
+    background-color: #a1cbfa;
+    border: 1px solid #4290e2;
+    box-shadow: 0 2px 2px rgba(0,90,250,0.05),
+      0 4px 4px rgba(0,90,250,0.05),
+      0 8px 8px rgba(0,90,250,0.05),
+      0 16px 16px rgba(0,90,250,0.05);
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+  }
 
 /************** FOOTER ****************/
 
@@ -521,13 +521,8 @@ footer ul li a:hover {
             flex-flow: column;
         }
 
-        .activity-container .item-1,
-        .activity-container .item-2,
-        .activity-container .item-3,
-        .activity-container .item-4,
-        .activity-container .item-5,
-        .activity-container .item-6 {
-            height: 200px;
+        .activity-container .flex-column,
+        .item {
             width: 100%;
         }
 
