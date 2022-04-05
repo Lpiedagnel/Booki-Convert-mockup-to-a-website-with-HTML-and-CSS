@@ -19,7 +19,11 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-.container {
+/************************ DESKTOP ************************/
+
+/************** HEADER ****************/
+
+header {
     margin-right: auto;
     margin-left: auto;
     padding-right: 5%;
@@ -27,10 +31,6 @@ body {
     width: 90%;
     max-width: 1920px;
 }
-
-/************************ DESKTOP ************************/
-
-/************** HEADER ****************/
 
 .flex-header {
     display: flex;
@@ -214,6 +214,15 @@ header .filter-info span {
 
 
 /************** MAIN ****************/
+
+main {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 90%;
+    max-width: 1920px;
+}
 
 .flex-container-lodging {
     display: flex;
@@ -488,10 +497,6 @@ footer ul li a:hover {
 
  /************************ MOBILE ************************/
 
-    .container {
-        width: 100%;
-    }
-
     @media (max-width: 768px) { 
         .flex-header {
             flex-direction: column;
@@ -499,6 +504,11 @@ footer ul li a:hover {
         
 
         /************** HEADER MOBILE ****************/
+
+        header {
+            width: 100%;
+            padding: 0;
+        }
 
         /*** LOGO MOBILE ***/
 
@@ -529,6 +539,14 @@ footer ul li a:hover {
         }
 
         /*** FORM ***/
+
+        header form,
+        header h1,
+        header .filters {
+            padding-right: 5%;
+            padding-left: 5%;
+        }
+
 
         header form button {
             display: block;
