@@ -371,7 +371,6 @@ header .filter-info span {
     justify-content: space-around;
     margin: 1%;
     width: 24%;
-    border: solid 2px var(--main-blue);
     height: 100%;
 }
 
@@ -412,7 +411,7 @@ header .filter-info span {
 }
 
 .card-body-activity h3 {
-    padding: 5px;
+    padding: 5px 10px;
 }
 
 .act1, .act4 { height: 600px; }
@@ -566,6 +565,9 @@ footer ul li a:hover {
         .activity-container .flex-column {
             width: 100%;
         }
+
+        .act1, .act2, .act3, .act4, .act5, .act6  { height: 280px; }
+        .act1 img, .act2 img, .act3 img, .act4 img, .act5 img, .act6 img { height: 200px; }
 
         /************** FOOTER ****************/
 
