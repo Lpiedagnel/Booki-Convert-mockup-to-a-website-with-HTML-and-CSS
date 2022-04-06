@@ -26,9 +26,9 @@ body {
 header {
     margin-right: auto;
     margin-left: auto;
-    padding-right: 5%;
-    padding-left: 5%;
-    width: 90%;
+    padding-right: 2%;
+    padding-left: 2%;
+    width: 95%;
     max-width: 1920px;
 }
 
@@ -170,6 +170,7 @@ header .filters div .filter-btn div {
     border-radius: 50px;
     border: solid 5px var(--lighter-blue);
     transition: 0.3s;
+    overflow: visible;
 }
 
 header .filters div .filter-btn div i {
@@ -218,9 +219,9 @@ header .filter-info span {
 main {
     margin-right: auto;
     margin-left: auto;
-    padding-right: 5%;
-    padding-left: 5%;
-    width: 90%;
+    padding-right: 2%;
+    padding-left: 2%;
+    width: 95%;
     max-width: 1920px;
 }
 
@@ -287,7 +288,7 @@ main {
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     padding: 0px;
-    margin: 3%;
+    margin: 2%;
     transition: 0.3s;
 }
 
@@ -315,6 +316,7 @@ main {
 }
 
 .card-body .stars {
+    display: inline;
     color: var(--background-grey);
 }
 
@@ -492,6 +494,19 @@ footer ul li a:hover {
         .card {
             width: 40%;
         }
+
+        /*** ACTIVITY ***/
+        .activity-container {
+            height: auto;
+            flex-flow: column;
+        }
+
+        .activity-container .flex-column {
+            width: 100%;
+        }
+
+        .act1, .act2, .act3, .act4, .act5, .act6  { height: 280px; }
+        .act1 img, .act2 img, .act3 img, .act4 img, .act5 img, .act6 img { height: 200px; }
     }
 
 
@@ -574,18 +589,7 @@ footer ul li a:hover {
             width: 90%;
         }
 
-        /*** ACTIVITY ***/
-        .activity-container {
-            height: auto;
-            flex-flow: column;
-        }
 
-        .activity-container .flex-column {
-            width: 100%;
-        }
-
-        .act1, .act2, .act3, .act4, .act5, .act6  { height: 280px; }
-        .act1 img, .act2 img, .act3 img, .act4 img, .act5 img, .act6 img { height: 200px; }
 
         /************** FOOTER ****************/
 
