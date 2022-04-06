@@ -164,7 +164,7 @@ header .filters div .filter-btn {
     margin: 10px;
 }
 
-header .filters div .filter-btn div {
+header .filters div .filter-btn span:first-child {
     background-color: var(--lighter-blue);
     padding: 12px;
     border-radius: 50px;
@@ -173,12 +173,12 @@ header .filters div .filter-btn div {
     overflow: visible;
 }
 
-header .filters div .filter-btn div i {
+header .filters div .filter-btn span:first-child i {
     color: var(--main-blue);
     transition: 0.3s;
 }
 
-header .filters div .filter-btn span {
+header .filters div .filter-btn span:last-child {
     text-align: center;
     padding: 15px;
     margin: auto;
@@ -191,12 +191,12 @@ header .filters div .filter-btn:hover {
     cursor: pointer;
 }
 
-header .filters div .filter-btn:hover > div {
+header .filters div .filter-btn:hover > span:first-child {
     background-color: var(--main-blue);
     border: solid 5px var(--main-blue);
 }
 
-header .filters div .filter-btn:hover > div i {
+header .filters div .filter-btn:hover > span:first-child i {
     color: white;
 }
 
