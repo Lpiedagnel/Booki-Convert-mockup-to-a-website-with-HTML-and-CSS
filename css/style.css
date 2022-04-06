@@ -608,12 +608,20 @@ footer ul li a:hover {
 
         /************** MAIN ****************/
 
+        main {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
         .lodging-section {
             order: 2;
+            background-color: white;
         }
 
         .popular-section {
             order: 1;
+            border-radius: 0;
         }
 
         /*** ARTICLE CARD ***/
@@ -630,7 +638,13 @@ footer ul li a:hover {
             height: 125px;
         }
 
+        /*** ACTIVITY ***/
 
+        .activity {
+            width: 90%;
+            padding-right: 5%;
+            padding-left: 5%;
+        }
 
         /************** FOOTER ****************/
 
