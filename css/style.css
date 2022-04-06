@@ -251,8 +251,9 @@ main {
 }
 
 .lodging-section .show-more-btn {
+    display: block;
     font-weight: bold;
-    margin-top: 45px;
+    margin-top: 25px;
     margin-left: 25px;
     font-size: 16px;
 }
@@ -367,7 +368,7 @@ main {
 
 .activity {
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 
 .activity-container {
@@ -505,8 +506,8 @@ footer ul li a:hover {
             width: 100%;
         }
 
-        .act1, .act2, .act3, .act4, .act5, .act6  { height: 280px; }
-        .act1 img, .act2 img, .act3 img, .act4 img, .act5 img, .act6 img { height: 200px; }
+        .act1, .act2, .act3, .act4, .act5, .act6  { height: 200px; }
+        .act1 img, .act2 img, .act3 img, .act4 img, .act5 img, .act6 img { height: 125px; }
     }
 
 
@@ -555,6 +556,10 @@ footer ul li a:hover {
 
         /*** FORM ***/
 
+        header h1 {
+            margin-top: -15px;
+        }
+
         header form,
         header h1,
         header .filters {
@@ -562,9 +567,12 @@ footer ul li a:hover {
             padding-left: 5%;
         }
 
-
         header form button {
             display: block;
+        }
+
+        header form input[type=search] {
+            width: 70%;
         }
 
         header form input[type=submit] {
@@ -579,6 +587,14 @@ footer ul li a:hover {
 
         /************** MAIN ****************/
 
+        .lodging-section {
+            order: 2;
+        }
+
+        .popular-section {
+            order: 1;
+        }
+
         /*** ARTICLE CARD ***/
 
         .cards-container {
@@ -586,7 +602,11 @@ footer ul li a:hover {
         }
 
         .card {
-            width: 90%;
+            width: 95%;
+        }
+
+        .card-header img {
+            height: 125px;
         }
 
 
