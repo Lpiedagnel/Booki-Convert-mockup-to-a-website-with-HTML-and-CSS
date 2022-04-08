@@ -15,7 +15,7 @@
             <img src="assets/logo/Booki.png" alt="Logo de Bookie, votre solution d'hébergement pour les vacances !">
             <nav>
                 <ul>
-                    <li>
+                    <li class="active">
                         <a href="#logding-section">
                             <div class="line-nav"></div>
                             Hébergements
@@ -38,7 +38,7 @@
             <label for="search-location">En plein centre ville ou en pleine nature</label><br>
             <div>
                 <div><i class="fas fa-map-marker-alt"></i></div>
-                <input type="search" id="search-location">
+                <input type="search" id="search-location" placeholder="Marseille, France">
                 <input type="submit" value="Rechercher">
                 <button type="submit"><i class="fas fa-search"></i></button>
             </div>
@@ -69,7 +69,7 @@
         </div>
         <div class="filter-info">
             <div><i class="fa-solid fa-info"></i></div> Plus de 500 logements sont disponibles dans cette ville
-        </div>        
+        </div>             
     </header>
     <!-- MAIN -->
     <main>
@@ -203,7 +203,7 @@
             </section>
             <!-- POPULAR -->
             <section class="popular-section">
-                <h2>Les plus populaires <i class="fas fa-chart-line fa-xl"></i> </h2>
+                <h2>Les plus populaires <i class="fas fa-chart-line"></i> </h2>
                 <!-- Start Card -->
                 <div class="card">
                     <a href="#">
@@ -360,22 +360,24 @@
     </main>
     <!-- FOOTER -->
     <footer>
-        <ul>
-            <li><h3>A propos</h3></li>
-            <li><a href="#">Fonctionnement du site</a></li>
-            <li><a href="#">Conditions générales de vente</a></li>
-            <li><a href="#"> Données et confidentialité</a></li>
-        </ul>
-        <ul>
-            <li><h3>Nos hébergements</h3></li>
-            <li><a href="#">Charte qualité</a></li>
-            <li><a href="#">Soumettre votre hôtel</a></li>
-        </ul>
-        <ul>
-            <li><h3>Assistance</h3></li>
-            <li><a href="#">Centre d'aide</a></li>
-            <li><a href="#">Nous contacter</a></li>
-        </ul>
+        <div class="footer-container">
+            <ul>
+                <li><h3>A propos</h3></li>
+                <li><a href="#">Fonctionnement du site</a></li>
+                <li><a href="#">Conditions générales de vente</a></li>
+                <li><a href="#"> Données et confidentialité</a></li>
+            </ul>
+            <ul>
+                <li><h3>Nos hébergements</h3></li>
+                <li><a href="#">Charte qualité</a></li>
+                <li><a href="#">Soumettre votre hôtel</a></li>
+            </ul>
+            <ul>
+                <li><h3>Assistance</h3></li>
+                <li><a href="#">Centre d'aide</a></li>
+                <li><a href="#">Nous contacter</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
