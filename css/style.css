@@ -436,29 +436,31 @@ main {
 /*** ACTIVITY ***/
 
 .activity {
-    margin-top: 50px;
+    margin-top: 70px;
+}
+
+.activity h2 {
     margin-bottom: 20px;
 }
 
 .activity-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
 }
 
 .activity-container .flex-column {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    margin: 1%;
-    width: 24%;
-    height: 100%;
+    width: 330px;
+}
+
+.activity-container .flex-column:not(:last-child) {
+    margin-right: 40px;
 }
 
 .card-activity {
     display: flex;
     flex-direction: column;
-    width: 100%;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -492,20 +494,22 @@ main {
 }
 
 .card-body-activity h3 {
-    padding: 5px 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    margin: auto;
 }
 
-.act1, .act4 { height: 600px; }
-.act1 img, .act4 img { height: 520px; }
+.act1, .act4 { height: 447px; }
+.act1 img, .act4 img { height: 400px; }
 
-.act2 { height: 330px; }
-.act2 img { height: 250px; }
+.act2 { height: 242px; }
+.act2 img { height: 195px; }
 
-.act3 { height: 240px; }
-.act3 img { height: 180px; }
+.act3 { height: 172px; }
+.act3 img { height: 125px; }
 
-.act5, .act6 { height: 285px; }
-.act5 img, .act6 img { height: 210px; }
+.act5, .act6 { height: 207px; }
+.act5 img, .act6 img { height: 165px; }
 
 
 /************** FOOTER ****************/
