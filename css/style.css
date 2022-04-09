@@ -520,16 +520,18 @@ footer {
 }
 
 .footer-container {
-    max-width: 1450px;
+    max-width: 1300px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding-right: 3%;
-    padding-left: 3%;
+    padding-left: 1%;
+    margin-top: 34px;
 }
 
 footer ul {
     list-style: none;
+    margin-right: auto;
+    line-height: 22px;
+    margin-bottom: 50px;
 }
 
 footer ul li {
