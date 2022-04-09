@@ -1,6 +1,6 @@
 /************************ GENERAL ************************/
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;800&display=swap');
 @import url('normalize.css');
 
 
@@ -95,7 +95,7 @@ nav ul .active .line-nav:first-child {
 
 header h1 {
     margin-top: 45px;
-    font-weight: bolder;
+    font-weight: 600;
     font-size: 23px;
     margin-bottom: 8px;
 }
@@ -126,7 +126,7 @@ header form div div i {
 header form input[type=search]  {
     margin-left: 0;
     padding: 12px;
-    font-weight: bolder;
+    font-weight: 900;
     font-size: 17px;
     border: solid 1px var(--background-grey);
     background-color: white;
@@ -141,7 +141,7 @@ header form button {
     background-color: var(--main-blue);
     color: var(--background-grey);
     border: none;
-    font-weight: bold;
+    font-weight: 950;
     padding: 12px 22px;
     margin-left: 0%;
     border-top-right-radius: 10px;
@@ -205,7 +205,8 @@ header .filters div .filter-btn span:last-child {
     text-align: center;
     padding: 11px;
     margin: auto;
-    font-weight: bolder;
+    font-weight: 950;
+    font-size: 18px;
 }
 
 header .filters div .filter-btn:hover {
@@ -268,7 +269,6 @@ main {
 .lodging-section {
     background-color: var(--background-grey);
     width: 66%;
-    height: auto;
     border-radius: 20px;
     padding: 20px;
 }
@@ -285,16 +285,17 @@ main {
 }
 
 .lodging-section .show-more-btn {
-    display: block;
-    font-weight: bold;
-    margin-top: 25px;
-    margin-left: 25px;
-    font-size: 16px;
+    display: inline-flex;
+    font-weight: 950;
+    margin-top: 30px;
+    margin-left: 3%;
+    font-size: 18px;
 }
 
 .lodging-section h2 {
-    font-size: 20px;
-    margin-left: 25px;
+    font-size: 21px;
+    font-weight: 750;
+    margin-left: 20px;
 }
 
 .popular-section h2 {
@@ -392,7 +393,7 @@ main {
 
 .popular-section .card {
     width: 350px;
-    margin: 15px auto;
+    margin: 17px auto;
     height: 145px;
 }
 
