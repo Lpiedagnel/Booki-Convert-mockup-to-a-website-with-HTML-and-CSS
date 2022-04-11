@@ -581,9 +581,15 @@ footer ul li a:hover {
 
     @media (max-width: 992px) { 
 
-        /************** MAIN ****************/
+        /************** MAIN TABLET ****************/
 
-        /*** ARTICLE CARD ***/
+        /*** ARTICLE CARD TABLET ***/
+
+        main {
+            width: 100%;
+            padding-right: 0;
+            padding-left: 0;
+        }
 
         .flex-container-lodging {
             flex-direction: column;
@@ -591,29 +597,59 @@ footer ul li a:hover {
 
         .lodging-section {
             width: 100%;
+            height: auto;
+            order: 2;
+            background-color: rgba(0, 0, 0, 0);
         }
 
         .popular-section {
+            margin-top: 50px;
             width: 100%;
-            margin: 7% auto;
-        }
-
-        .card {
-            width: 40%;
-        }
-
-        /*** ACTIVITY ***/
-        .activity-container {
             height: auto;
-            flex-flow: column;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border-radius: 0;
+            order: 0;
+        }
+
+        /*** ACTIVITY TABLET ***/
+        .activity {
+            padding-right: 3%;
+            padding-left: 3%;
+        }
+
+        .activity-container {
+            flex-wrap: wrap;
+            height: auto;
+            margin: auto;
         }
 
         .activity-container .flex-column {
-            width: 100%;
+            height: auto;
         }
 
-        .act1, .act2, .act3, .act4, .act5, .act6  { height: 200px; }
-        .act1 img, .act2 img, .act3 img, .act4 img, .act5 img, .act6 img { height: 125px; }
+        .activity-container .flex-column:not(:last-child) {
+            margin-right: 0px;
+        }
+
+        .flex-column:nth-child(1) {
+            order: 3;
+        }
+
+        .flex-column:nth-child(2) {
+            order: 1;
+        }
+
+        .flex-column:nth-child(3) {
+            order: 4;
+        }
+
+        .flex-column:nth-child(4) {
+            order: 2;
+        }
+
+        .act1, .act2, .act3, .act4 , .act5, .act6 { height: 195px; }
+        .act1 img, .act2 img, .act3 img, .act4 img, .act5 img, .act6 img { height: 139px; }
     }
 
 
