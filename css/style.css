@@ -281,23 +281,16 @@ main {
     justify-content: space-between;
 }
 
+
+/*** LOGDING SECTION ***/
+
 .lodging-section {
     background-color: var(--background-grey);
     width: 66%;
     border-radius: 20px;
     padding: 20px;
-    height: 626px;
-}
-
-.popular-section {
-    background-color: var(--background-grey);
-    width: 31%;
+    min-height: 626px;
     height: auto;
-    border-radius: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 }
 
 .lodging-section .show-more-btn {
@@ -315,20 +308,7 @@ main {
     margin-bottom: 5px;
 }
 
-.popular-section h2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 95%;
-    font-weight: 750;
-    font-size: 22px;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    margin-left: 3%;
-}
-
-
-/*** ARTICLE CARD ***/
+/*** CARDS LOGDING SECTION ***/
 
 .cards-container {
     display: flex;
@@ -407,10 +387,38 @@ main {
     color: var(--main-blue);
 }
 
+/*** POPULAR SECTION ***/
+
+.popular-section {
+    background-color: var(--background-grey);
+    width: 31%;
+    height: auto;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.popular-section h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    font-weight: 750;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 3%;
+}
+
 /*** CARDS ON POPULAR SECTION ***/
 
+
 .popular-section .card {
-    width: 343px;
+    width: 100%;
+    max-width: 343px;
     margin: 17px auto;
     height: 145px;
 }
@@ -424,7 +432,11 @@ main {
     color: black;
 }
 
-.popular-section .card a div img {
+.popular-section .card .card-header {
+    width: 40%;
+}
+
+.popular-section .card .card-header img {
     border-top-left-radius: 20px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 20px;
@@ -432,22 +444,25 @@ main {
     margin: auto;
 }
 
-.popular-section .card a div {
+.popular-section .card .card-body {
     margin-right: 5%;
     padding-bottom: 5px;
-    height: 175px;
 }
 
-.popular-section .card a div:first-child {
-    width: 40%;
-}
-
-.popular-section .card a div:last-child {
+.popular-section .card-body {
     width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2%;
+    margin-left: 2%;
 }
 
-.popular-section .card .stars i {
-    margin-top: 40px;
+.popular-section .stars {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+
 }
 
 
