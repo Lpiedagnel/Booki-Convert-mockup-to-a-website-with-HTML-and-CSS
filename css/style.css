@@ -744,12 +744,16 @@ footer ul li a:hover {
         header form,
         header h1,
         header .filters {
-            padding-right: 5%;
-            padding-left: 5%;
+            padding-right: 6%;
+            padding-left: 6%;
         }
 
         header form button {
             display: inline;
+        }
+
+        .form-container {
+            margin-top: 10px;
         }
 
         header form input[type=search] {
@@ -763,9 +767,16 @@ footer ul li a:hover {
         header form button {
             width: 50px;
             height: 50px;
-            border-radius: 10px;
+            border-radius: 15px;
             padding: auto;
             padding: 15px;
+            position: relative;
+            right: 15px;
+        }
+
+        header form div div {
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
         }
 
         header form button i {
@@ -782,7 +793,14 @@ footer ul li a:hover {
         .filter-info {
             padding-right: 5%;
             padding-left: 5%;
-            
+        }
+
+        header .filters div .filter-btn {
+            margin-top: 3px;
+        }
+
+        header .filters div .filter-btn span:last-child {
+            font-size: 15px;
         }
 
         /************** MAIN MOBILE ****************/
