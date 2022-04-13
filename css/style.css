@@ -479,17 +479,15 @@ main {
 .activity-container {
     display: flex;
     flex-direction: row;
+    gap: 40px;
 }
 
 .activity-container .flex-column {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    flex-wrap: wrap;
     width: 330px;
-}
-
-.activity-container .flex-column:not(:last-child) {
-    margin-right: 40px;
 }
 
 .card-activity {
@@ -501,7 +499,7 @@ main {
     padding: 0px;
     margin-bottom: 30px;
     transition: 0.3s;
-    width: 302px;
+    max-width: 302px;
 }
 
 .card-activity:hover {
