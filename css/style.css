@@ -339,11 +339,16 @@ main {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+.card:hover > a {
+    color: var(--main-blue);
+}
+
 .card a {
     margin: 0;
     padding: 5px;
     display: flex;
     flex-direction: column;
+    transition: 0.3s;
 }
 
 .card-header img {
@@ -432,6 +437,10 @@ main {
     color: black;
 }
 
+.popular-section .card:hover > a {
+    color: var(--main-blue);
+}
+
 .popular-section .card .card-header {
     width: 40%;
 }
@@ -506,12 +515,17 @@ main {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+.card-activity:hover > a {
+    color: var(--main-blue);
+}
+
 .card-activity a {
     margin: 0;
     display: flex;
     flex-direction: column;
     color: black;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 .card-header-activity {
