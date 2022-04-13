@@ -823,15 +823,33 @@ footer ul li a:hover {
             border-radius: 0;
         }
 
-        /*** ARTICLE CARD MOBILE ***/
+        .lodging-section h2 {
+            margin-bottom: 20px;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding: 0;
+            width: 100%;
+        }
+
+        .popular-section h2 {
+            margin-bottom: 20px;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding: 0;
+            width: 100%;
+        }
+
+        /*** CARD MOBILE ***/
 
         .cards-container {
             flex-direction: column;
         }
 
-        .card {
+        .card,
+        .popular-section .card {
             width: 343px;
-            margin: 20px auto;
+            margin: 5px auto;
+            max-width: 100%;
         }
 
         /*** ACTIVITY MOBILE ***/
@@ -839,28 +857,41 @@ footer ul li a:hover {
         .activity {
             display: flex;
             flex-direction: column;
+            margin-top: 10px;
+        }
+
+        .activity h2 {
+            padding-left: 5%;
         }
 
         .activity-container {
             flex-direction: column;
+            gap: 0px;
         }
 
         .card-activity {
-            width: 343px;
+            max-width: 343px;
+            width: 100%;
+            margin-bottom: 25px;
         }
 
         /************** FOOTER MOBILE ****************/
 
         .footer-container {
             flex-direction: column;
-            padding-top: 20px;
+            padding-top: 15px;
+            margin-left: -13px;
             padding-bottom: 40px;
         }
 
         footer ul {
-            margin-top: 2px;
+            margin-top: 15px;
             margin-bottom: 2px;
             font-size: 15px;
+        }
+
+        footer ul li {
+            padding: 4px;
         }
 
         footer ul:nth-child(2) {
