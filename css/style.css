@@ -688,19 +688,25 @@ footer ul li a:hover {
 
         /*** ACTIVITY TABLET ***/
         .activity {
-            padding-right: 3%;
-            padding-left: 3%;
+            padding-right: 48px;
+            padding-left: 48px;
+            margin-right: -80px;
             margin-top: 10px;
+            width: 100%;
         }
 
         .activity-container {
             flex-wrap: wrap;
             height: auto;
-            margin: auto;
+            justify-content: space-between;
+            margin: 0;
+            width: 100%;
+            gap: 0px;
         }
 
         .activity-container .flex-column {
             height: auto;
+            width: 48%;
         }
 
         .activity-container .flex-column:not(:last-child) {
@@ -725,6 +731,11 @@ footer ul li a:hover {
 
         .act1, .act2, .act3, .act4 , .act5, .act6 { height: 195px; }
         .act1 img, .act2 img, .act3 img, .act4 img, .act5 img, .act6 img { height: 139px; }
+    }
+
+    .card-activity {
+        width: 100%;
+        max-width: 100%;
     }
 
 
