@@ -130,7 +130,7 @@ header form div div i {
 
 header form input[type=search]  {
     margin-left: 0;
-    padding: 12px;
+    padding: 15px;
     font-weight: 900;
     width: 231px;
     font-size: 18px;
@@ -580,7 +580,7 @@ footer ul {
     margin-right: auto;
     line-height: 22px;
     margin-bottom: 50px;
-    margin-top: 40px;
+    margin-top: 25px;
 }
 
 footer ul li {
