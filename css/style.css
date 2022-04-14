@@ -27,6 +27,7 @@ header {
     padding-right: 3%;
     padding-left: 3%;
     max-width: 1440px;
+    margin: auto;
 }
 
 .flex-header {
@@ -274,6 +275,7 @@ main {
     padding-right: 3%;
     padding-left: 3%;
     max-width: 1440px;
+    margin: auto;
 }
 
 .flex-container-lodging {
@@ -475,7 +477,6 @@ main {
 
 }
 
-
 /*** ACTIVITY ***/
 
 .activity {
@@ -568,7 +569,8 @@ footer {
 }
 
 .footer-container {
-    max-width: 1300px;
+    max-width: 1440px;
+    margin: auto;
     display: flex;
     flex-direction: row;
     padding-left: 1px;
@@ -581,6 +583,7 @@ footer ul {
     line-height: 22px;
     margin-bottom: 50px;
     margin-top: 25px;
+    padding-left: -40px;
 }
 
 footer ul li {
@@ -611,6 +614,13 @@ footer ul li a:hover {
 
     @media (max-width: 992px) { 
 
+        /************** HEADER TABLET **************/
+
+        header {
+            padding-left: 48px;
+            padding-right: 48px;
+        }
+
         /************** MAIN TABLET ****************/
 
         /*** ARTICLE CARD TABLET ***/
@@ -619,10 +629,27 @@ footer ul li a:hover {
             width: 100%;
             padding-right: 0;
             padding-left: 0;
+            margin-top: -50px;
         }
 
         .flex-container-lodging {
             flex-direction: column;
+            margin: 10px 0;
+            padding: 0;
+        }
+
+        .lodging-section h2 {
+            margin: 15px auto;
+        }
+
+        .cards-container {
+            flex-direction: row;
+            margin: auto -1%;
+            padding: 0;
+        }
+
+        .card {
+            width: 47%;
         }
 
         .lodging-section {
@@ -630,16 +657,33 @@ footer ul li a:hover {
             height: auto;
             order: 2;
             background-color: rgba(0, 0, 0, 0);
+            padding-left: 48px;
+            padding-right: 48px;
+        }
+
+        .lodging-section .show-more-btn {
+            margin-left: 1%;
         }
 
         .popular-section {
             margin-top: 50px;
             width: 100%;
             height: auto;
-            flex-direction: row;
+            flex-direction: column;
             flex-wrap: wrap;
             border-radius: 0;
             order: 0;
+            padding-left: 48px;
+            padding-right: 48px;
+        }
+
+        .popular-section h2 {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .popular-section .card {
+            max-width: 100%;
         }
 
         /*** ACTIVITY TABLET ***/
@@ -809,7 +853,7 @@ footer ul li a:hover {
             padding-left: 0;
             padding-right: 0;
             margin: auto;
-            margin-top: -50px;
+            
         }
 
         .lodging-section {
