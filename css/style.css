@@ -502,17 +502,17 @@ body {
     margin-top: 70px;
 }
 
-.activity h2 {
+.activity__title {
     margin-bottom: 18px;
 }
 
-.activity-container {
+.activity__container {
     display: flex;
     flex-direction: row;
     gap: 40px;
 }
 
-.activity-container .flex-column {
+.activity__column {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -520,7 +520,7 @@ body {
     width: 330px;
 }
 
-.card-activity {
+.activity-card {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -532,15 +532,15 @@ body {
     max-width: 302px;
 }
 
-.card-activity:hover {
+.activity-card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.card-activity:hover > a {
+.activity-card:hover > a {
     color: var(--main-blue);
 }
 
-.card-activity a {
+.activity-card a {
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -549,35 +549,35 @@ body {
     transition: 0.3s;
 }
 
-.card-header-activity {
+.activity-card__header {
     margin: 0;
     padding: 0;
 }
 
-.card-header-activity img {
+.activity-card__img{
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
 }
 
-.card-body-activity h3 {
+.activity-card__title {
     padding: 12px 24px;
     font-size: 16px;
     margin: auto;
 }
 
 .act1, .act4 { height: 444px; }
-.act1 img, .act4 img { height: 388px; }
+.act1 .activity-card__img, .act4 .activity-card__img { height: 388px; }
 
 .act2 { height: 235px; }
-.act2 img { height: 179px; }
+.act2 .activity-card__img { height: 179px; }
 
 .act3 { height: 161px; }
-.act3 img { height: 105px; }
+.act3 .activity-card__img { height: 105px; }
 
 .act5, .act6 { height: 195px; }
-.act5 img, .act6 img { height: 139px; }
+.act5 .activity-card__img, .act6 .activity-card__img { height: 139px; }
 
 
 /************** FOOTER ****************/
@@ -715,7 +715,7 @@ footer ul li a:hover {
             width: 100%;
         }
 
-        .activity-container {
+        .activity__container {
             flex-wrap: wrap;
             height: auto;
             justify-content: space-between;
@@ -724,36 +724,36 @@ footer ul li a:hover {
             gap: 0px;
         }
 
-        .activity-container .flex-column {
+        .activity__column {
             height: auto;
             width: 48%;
         }
 
-        .activity-container .flex-column:not(:last-child) {
+        .activity__column:not(:last-child) {
             margin-right: 0px;
         }
 
-        .flex-column:nth-child(1) {
+        .activity__column:nth-child(1) {
             order: 3;
         }
 
-        .flex-column:nth-child(2) {
+        .activity__column:nth-child(2) {
             order: 1;
         }
 
-        .flex-column:nth-child(3) {
+        .activity__column:nth-child(3) {
             order: 4;
         }
 
-        .flex-column:nth-child(4) {
+        .activity__column:nth-child(4) {
             order: 2;
         }
 
         .act1, .act2, .act3, .act4 , .act5, .act6 { height: 195px; }
-        .act1 img, .act2 img, .act3 img, .act4 img, .act5 img, .act6 img { height: 139px; }
+        .act1 .activity-card__img, .act2 .activity-card__img, .act3 .activity-card__img, .act4 .activity-card__img, .act5 .activity-card__img, .act6 .activity-card__img { height: 139px; }
     }
 
-    .card-activity {
+    .activity-card {
         width: 100%;
         max-width: 100%;
     }
@@ -940,33 +940,33 @@ footer ul li a:hover {
             padding-right: 5%;
         }
 
-        .activity-container {
+        .activity__container {
             flex-direction: column;
             gap: 0px;
         }
 
-        .activity-container .flex-column {
+        .activity__column {
             width: 100%;
         }
 
-        .card-activity {
+        .activity-card {
             margin-bottom: 25px;
             height: 190px;
         }
 
-        .flex-column:nth-child(1) {
+        .activity__column:nth-child(1) {
             order: 1;
         }
 
-        .flex-column:nth-child(2) {
+        .activity__column:nth-child(2) {
             order: 2;
         }
 
-        .flex-column:nth-child(3) {
+        .activity__column:nth-child(3) {
             order: 3;
         }
 
-        .flex-column:nth-child(4) {
+        .activity__column:nth-child(4) {
             order: 4;
         }
 
