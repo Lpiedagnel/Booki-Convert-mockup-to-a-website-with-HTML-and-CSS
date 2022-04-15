@@ -47,13 +47,13 @@ body {
 
 /*** NAVIGATION ***/
 
-.nav-ul {
+.nav__menu {
     display: flex;
     list-style: none;
     margin-top: 0;
 }
 
-.nav-ul__li {
+.nav__item {
     margin: 0;
     width: 170px;
     text-align: center;
@@ -61,7 +61,7 @@ body {
     margin-right: -17px;
 }
 
-.nav-ul__li a {
+.nav__item a {
     color: black;
     text-decoration: none;
     font-weight: 500;
@@ -71,24 +71,24 @@ body {
     padding: 0;
 }
 
-.nav-ul__li a .line-nav:first-child {
+.nav__item .nav__line:first-child {
     border: solid 1px ;
     margin-bottom: 45px;
     visibility: hidden;
 }
 
-.nav-ul__li a .line-nav:last-child {
+.nav__item .nav__line:last-child {
     display: none;
     border: solid 2px var(--background-grey);
     margin-bottom: 45px;
     margin-top: 15px;
 }
 
-.nav-ul .nav-ul__li--active a {
+.nav__item--active a {
     color: var(--main-blue);
 }
 
-.nav-ul .nav-ul__li--active .line-nav:first-child {
+.nav__item--active .nav__line:first-child {
     border: solid 1px var(--main-blue);
     background-color: var(--main-blue);
     visibility: visible;
@@ -620,7 +620,7 @@ footer ul li a:hover {
 
         /************** HEADER TABLET **************/
 
-        header {
+        .header {
             padding-left: 48px;
             padding-right: 48px;
         }
@@ -746,21 +746,21 @@ footer ul li a:hover {
  /************************ MOBILE ************************/
 
     @media (max-width: 768px) { 
-        .flex-header {
+        .header__flexbox {
             flex-direction: column;
         }
         
 
         /************** HEADER MOBILE ****************/
 
-        header {
+        .header {
             max-width: 100%;
             padding: 0;
         }
 
         /*** LOGO MOBILE ***/
 
-        .flex-header img {
+        .header__flexbox img {
             height: auto;
             width: 25%;
             margin: 20px auto;
@@ -768,26 +768,26 @@ footer ul li a:hover {
 
         /*** NAVIGATION MOBILE ***/
 
-        nav ul {
+        .nav__menu {
             margin-top: 20px;
             padding-left: 0%;
         }
 
-        nav ul li {
+        .nav__item {
             width: 50%;
             font-size: 16px;
             margin-right: 0;
         }
 
-        nav ul li a .line-nav:first-child {
+        .nav__item a .nav__line:first-child {
             display: none;
         }
 
-        nav ul li a .line-nav:last-child {
+        .nav__item a .nav__line:last-child {
             display: block;
         }
 
-        nav ul .active .line-nav:last-child {
+        .nav__item--active .nav__line:last-child {
             border: solid 2px var(--main-blue);
             background-color: var(--main-blue);
             visibility: visible;
