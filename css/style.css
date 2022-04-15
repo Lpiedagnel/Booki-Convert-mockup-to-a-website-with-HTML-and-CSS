@@ -7,6 +7,7 @@
 
 :root {
     --main-blue: #0065FC;
+    --main-blue-darker: #0045ab;
     --lighter-blue: #DEEBFF;
     --background-grey: #F2F2F2;
 }
@@ -154,11 +155,13 @@ body {
     margin-left: 0%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    transition: 0.3s;
 }
 
 .form__submit-desktop:hover,
 .form__submit-mobile:hover {
     cursor: pointer;
+    background-color: var(--main-blue-darker);
 }
 
 .form__submit-mobile {
@@ -172,12 +175,7 @@ body {
     margin-top: 20px;
 }
 
-.filters div {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.filters h2 {
+.filters__title {
     font-size: 18px;
     line-height: 40px;
     height: 40px;
@@ -186,7 +184,12 @@ body {
     font-weight: 700;
 }
 
-header .filters div .filter-btn {
+.filters__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filters__btn {
     display: flex;
     background-color: white;
     border: solid 0px;
@@ -197,7 +200,7 @@ header .filters div .filter-btn {
     margin: 10px;
 }
 
-header .filters div .filter-btn span:first-child {
+.filters__icon {
     background-color: var(--lighter-blue);
     width: 50px;
     height: 50px;
@@ -208,14 +211,14 @@ header .filters div .filter-btn span:first-child {
     justify-content: center;
 }
 
-header .filters div .filter-btn span:first-child i {
+.filters__icon i {
     color: var(--main-blue);
     transition: 0.3s;
     font-size: 20px;
     margin: auto;
 }
 
-header .filters div .filter-btn span:last-child {
+.filters__name {
     text-align: center;
     padding-left: 10px;
     padding-right: 25px;
@@ -224,23 +227,23 @@ header .filters div .filter-btn span:last-child {
     font-size: 19px;
 }
 
-header .filters div .filter-btn:hover {
+.filters__btn:hover {
     color: white;
     background: var(--main-blue);
     cursor: pointer;
     box-shadow: inset 0px 0px 0px 2px var(--main-blue);
 }
 
-header .filters div .filter-btn:hover > span:first-child {
+.filters__btn:hover > .filters__icon {
     background-color: var(--main-blue);
     border: solid 5px var(--main-blue);
 }
 
-header .filters div .filter-btn:hover > span:first-child i {
+.filters__btn:hover > .filters__icon i {
     color: white;
 }
 
-.filter-info {
+.filters__info {
     display: inline-flex;
     align-items: center;
     margin-top: 20px;
@@ -248,7 +251,7 @@ header .filters div .filter-btn:hover > span:first-child i {
     margin-left: 10px;
 }
 
-.filter-info div {
+.filters__count {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -258,11 +261,11 @@ header .filters div .filter-btn:hover > span:first-child i {
     margin-right: 15px;
 }
 
-.filter-info div i {
+.filters__count i {
     color: var(--main-blue);
 }
 
-.filter-info div:after {
+.filters__count:after {
     content:'';
     float: left;
     width: auto;
@@ -802,7 +805,7 @@ footer ul li a:hover {
 
         .form,
         .header__title,
-        header .filters {
+        .filters {
             padding-right: 6%;
             padding-left: 6%;
         }
@@ -844,22 +847,22 @@ footer ul li a:hover {
             flex-direction: column;
         }
 
-        .filters h2 {
+        .filters__title {
             line-height: 20px;
             height: auto;
             margin-bottom: 5px;
         }
 
-        .filter-info {
+        .filters__info {
             padding-right: 6%;
             padding-left: 6%;
         }
 
-        .filter-info div:first-child {
+        .filters__count {
             align-self: flex-start;
         }
 
-        header .filters div .filter-btn span:last-child {
+        .filters__name {
             font-size: 15px;
         }
 
