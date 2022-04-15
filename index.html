@@ -13,36 +13,36 @@
     <header class="header">
         <div class="header__flexbox">
             <!-- LOGO-->
-            <img src="assets/logo/Booki.png" alt="Logo de Bookie, votre solution d'hébergement pour les vacances !">
+            <img class="header__logo" src="assets/logo/Booki.png" alt="Logo de Bookie, votre solution d'hébergement pour les vacances !">
             <!-- NAV -->
             <nav class="nav">
                 <ul class="nav__menu">
-                    <li class="nav__item nav__item--active">
-                        <a href="#logding-section">
-                            <div class="nav__line"></div>
+                    <li class="nav__item">
+                        <a href="#logding-section" class="nav__link nav__link--active">
+                            <div class="nav__line-desktop nav__line-desktop--active"></div>
                             Hébergements
-                            <div class="nav__line"></div>
+                            <div class="nav__line-mobile nav__line-mobile--active"></div>
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#activity-section">
-                            <div class="nav__line"></div>
+                        <a href="#activity-section" class="nav__link">
+                            <div class="nav__line-desktop"></div>
                             Activités
-                            <div class="nav__line"></div>
+                            <div class="nav__line-mobile"></div>
                         </a>
                     </li>
                 </ul>             
             </nav>
         </div>
         <!-- SEARCH FORM -->
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <form action="submit">
-            <label for="search-location">En plein centre ville ou en pleine nature</label><br>
-            <div class="form-container">
-                <div><i class="fas fa-map-marker-alt"></i></div>
-                <input type="search" id="search-location" placeholder="Marseille, France">
-                <input type="submit" value="Rechercher">
-                <button type="submit"><i class="fas fa-search"></i></button>
+        <h1 class="header__title">Trouvez votre hébergement pour des vacances de rêve</h1>
+        <form action="submit" class="form">
+            <label for="search-location" class="form__label">En plein centre ville ou en pleine nature</label><br>
+            <div class="form__container">
+                <div class="form__icon"><i class="fas fa-map-marker-alt"></i></div>
+                <input type="search" class="form__input" id="search-location" placeholder="Marseille, France">
+                <input type="submit" value="Rechercher" class="form__submit-desktop">
+                <button type="submit" class="form__submit-mobile"><i class="fas fa-search"></i></button>
             </div>
         </form>
         <!-- FILTER -->

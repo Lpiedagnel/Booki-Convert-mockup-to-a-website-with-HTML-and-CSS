@@ -38,7 +38,7 @@ body {
 
 /*** LOGO ***/
 
-.header__flexbox img {
+.header__logo {
     object-fit: cover;
     height: 45px;
     margin-top: 45px;
@@ -61,7 +61,7 @@ body {
     margin-right: -17px;
 }
 
-.nav__item a {
+.nav__link {
     color: black;
     text-decoration: none;
     font-weight: 500;
@@ -71,24 +71,25 @@ body {
     padding: 0;
 }
 
-.nav__item .nav__line:first-child {
+.nav__line-desktop {
     border: solid 1px ;
     margin-bottom: 45px;
     visibility: hidden;
 }
 
-.nav__item .nav__line:last-child {
+.nav__line-mobile {
     display: none;
     border: solid 2px var(--background-grey);
     margin-bottom: 45px;
     margin-top: 15px;
+    background-color: var(--background-grey);
 }
 
-.nav__item--active a {
+.nav__link--active {
     color: var(--main-blue);
 }
 
-.nav__item--active .nav__line:first-child {
+.nav__line-desktop--active {
     border: solid 1px var(--main-blue);
     background-color: var(--main-blue);
     visibility: visible;
@@ -96,7 +97,7 @@ body {
 
 /*** FORM ***/
 
-header h1 {
+.header__title {
     margin-top: 35px;
     letter-spacing: -1px;
     font-weight: 600;
@@ -104,17 +105,14 @@ header h1 {
     margin-bottom: 8px;
 }
 
-header .form-container {
+.form__container {
     margin-top: 20px;
-}
-
-header form div {
     display: flex;
     flex-direction: row;
     height: 50px;
 }
 
-header form div div {
+.form__icon {
     background-color: var(--background-grey);
     padding: 15px;
     width: 50px;
@@ -122,13 +120,16 @@ header form div div {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     margin-right: 0;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
 }
 
-header form div div i {
+.form__icon i {
     margin: auto;
 }
 
-header form input[type=search]  {
+.form__input  {
     margin-left: 0;
     padding: 15px;
     font-weight: 900;
@@ -138,12 +139,12 @@ header form input[type=search]  {
     background-color: white;
 }
 
-header form input[type=search]::placeholder {
+.form__input::placeholder {
     color: black;
 }
 
-header form input[type=submit],
-header form button {
+.form__submit-desktop,
+.form__submit-mobile {
     background-color: var(--main-blue);
     color: var(--background-grey);
     border: none;
@@ -155,12 +156,12 @@ header form button {
     border-bottom-right-radius: 15px;
 }
 
-header form input[type=submit]:hover,
-header form button:hover {
+.form__submit-desktop:hover,
+.form__submit-mobile:hover {
     cursor: pointer;
 }
 
-header form button {
+.form__submit-mobile {
     display: none;
 }
 
@@ -760,7 +761,7 @@ footer ul li a:hover {
 
         /*** LOGO MOBILE ***/
 
-        .header__flexbox img {
+        .header__logo {
             height: auto;
             width: 25%;
             margin: 20px auto;
@@ -779,56 +780,35 @@ footer ul li a:hover {
             margin-right: 0;
         }
 
-        .nav__item a .nav__line:first-child {
+        .nav__line-desktop {
             display: none;
         }
 
-        .nav__item a .nav__line:last-child {
+        .nav__line-mobile {
             display: block;
         }
 
-        .nav__item--active .nav__line:last-child {
+        .nav__line-mobile--active {
             border: solid 2px var(--main-blue);
             background-color: var(--main-blue);
             visibility: visible;
         }
 
-
-
         /*** FORM MOBILE ***/
 
-        header h1 {
+        .header__title {
             margin-top: -15px;
         }
 
-        header form,
-        header h1,
+        .form,
+        .header__title,
         header .filters {
             padding-right: 6%;
             padding-left: 6%;
         }
 
-        header form button {
+        .form__submit-mobile {
             display: inline;
-        }
-
-        header .filters div .filter-btn {
-            margin: 7px;
-        }
-
-        .form-container {
-            margin-top: 20px;
-        }
-
-        header form input[type=search] {
-            width: 90%;
-        }
-
-        header form input[type=submit] {
-            display: none;
-        }
-
-        header form button {
             width: 50px;
             height: 50px;
             border-radius: 15px;
@@ -837,12 +817,24 @@ footer ul li a:hover {
             right: 15px;
         }
 
-        header form div div {
+        .form__container {
+            margin-top: 20px;
+        }
+
+        .form__input {
+            width: 90%;
+        }
+
+        .form__submit-desktop {
+            display: none;
+        }
+
+        .form__icon {
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
         }
 
-        header form button i {
+        .form__icon i {
             margin: auto;
         }
 
