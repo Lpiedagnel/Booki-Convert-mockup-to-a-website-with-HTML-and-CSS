@@ -23,14 +23,14 @@ body {
 
 /************** HEADER ****************/
 
-header {
+.header {
     padding-right: 3%;
     padding-left: 3%;
     max-width: 1440px;
     margin: auto;
 }
 
-.flex-header {
+.header__flexbox {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -38,7 +38,7 @@ header {
 
 /*** LOGO ***/
 
-.flex-header img {
+.header__flexbox img {
     object-fit: cover;
     height: 45px;
     margin-top: 45px;
@@ -47,13 +47,13 @@ header {
 
 /*** NAVIGATION ***/
 
-nav ul {
+.nav-ul {
     display: flex;
     list-style: none;
     margin-top: 0;
 }
 
-nav ul li {
+.nav-ul__li {
     margin: 0;
     width: 170px;
     text-align: center;
@@ -61,7 +61,7 @@ nav ul li {
     margin-right: -17px;
 }
 
-nav ul li a {
+.nav-ul__li a {
     color: black;
     text-decoration: none;
     font-weight: 500;
@@ -71,24 +71,24 @@ nav ul li a {
     padding: 0;
 }
 
-nav ul li a .line-nav:first-child {
+.nav-ul__li a .line-nav:first-child {
     border: solid 1px ;
     margin-bottom: 45px;
     visibility: hidden;
 }
 
-nav ul li a .line-nav:last-child {
+.nav-ul__li a .line-nav:last-child {
     display: none;
     border: solid 2px var(--background-grey);
     margin-bottom: 45px;
     margin-top: 15px;
 }
 
-nav ul .active a {
+.nav-ul .nav-ul__li--active a {
     color: var(--main-blue);
 }
 
-nav ul .active .line-nav:first-child {
+.nav-ul .nav-ul__li--active .line-nav:first-child {
     border: solid 1px var(--main-blue);
     background-color: var(--main-blue);
     visibility: visible;
