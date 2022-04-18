@@ -99,7 +99,7 @@ body {
     letter-spacing: -1px;
     font-weight: 600;
     font-size: 23px;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
 }
 
 .form__container {
@@ -301,7 +301,7 @@ body {
 
 .lodging__show-more {
     display: inline-flex;
-    font-weight: 950;
+    font-weight: 750;
     margin-top: 30px;
     margin-left: 3%;
     font-size: 18px;
@@ -425,7 +425,7 @@ body {
 .popular-card__rating {
     display: inline-flex;
     flex-direction: row;
-    gap: 3px;
+    gap: 1px;
     color: var(--background-grey);
 }
 
@@ -445,7 +445,7 @@ body {
     width: 100%;
     max-width: 343px;
     margin: 17px auto;
-    height: 145px;
+    height: 150px;
 }
 
 .popular-card a {
@@ -468,12 +468,11 @@ body {
     border-top-left-radius: 20px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 20px;
-    height: 135px;
+    height: 140px;
     margin: auto;
 }
 
 .popular-card__body {
-    margin-right: 5%;
     padding-bottom: 5px;
     width: 60%;
     display: flex;
@@ -743,6 +742,7 @@ footer {
     @media (max-width: 768px) { 
         .header__flexbox {
             flex-direction: column;
+            margin-bottom: -60px;
         }
         
         /************** HEADER MOBILE ****************/
@@ -789,10 +789,6 @@ footer {
 
         /*** FORM MOBILE ***/
 
-        .header__title {
-            margin-top: -15px;
-        }
-
         .form,
         .header__title,
         .filters {
@@ -811,7 +807,7 @@ footer {
         }
 
         .form__container {
-            margin-top: 20px;
+            margin-top: 30px;
         }
 
         .form__input {
@@ -882,7 +878,7 @@ footer {
         }
 
         .lodging__title {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             margin-left: 0px;
             margin-right: 0px;
             width: 100%;
@@ -903,10 +899,9 @@ footer {
         }
 
         .lodging-card,
-        .popuar-card {
+        .popular-card {
             width: 100%;
-            margin: 5px auto;
-            max-width: 100%;
+            margin: 7px auto;
         }
 
         /*** ACTIVITY MOBILE ***/
@@ -916,6 +911,10 @@ footer {
             flex-direction: column;
             padding-left: 5%;
             padding-right: 5%;
+        }
+
+        .activity__title {
+            margin-bottom: 30px;
         }
 
         .activity__container {
@@ -961,6 +960,7 @@ footer {
             margin-top: 15px;
             margin-bottom: 2px;
             font-size: 15px;
+            padding-left: 23px;
         }
 
         .footer__item {
