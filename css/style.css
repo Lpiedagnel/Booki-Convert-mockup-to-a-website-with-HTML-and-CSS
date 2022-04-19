@@ -37,11 +37,15 @@ body {
 
 /*** LOGO ***/
 
-.header__logo {
-    object-fit: cover;
+.logo__link {
+    display: contents;
+}
+
+.logo__img {
     height: 45px;
     margin-top: 45px;
     margin-left: 1%;
+    width: auto;
 }
 
 /*** NAVIGATION ***/
@@ -754,7 +758,7 @@ footer {
 
         /*** LOGO MOBILE ***/
 
-        .header__logo {
+        .logo__img {
             height: auto;
             width: 25%;
             margin: 20px auto;
