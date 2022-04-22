@@ -492,6 +492,7 @@ body {
 
 .activity__title {
     margin-bottom: 18px;
+    font-size: 21px;
 }
 
 .activity__container {
@@ -840,6 +841,10 @@ footer {
             line-height: 20px;
             height: auto;
             margin-bottom: 5px;
+        }
+
+        .filters__btn {
+            margin: 6px;
         }
 
         .filters__info {
